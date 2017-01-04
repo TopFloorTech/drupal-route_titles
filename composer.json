@@ -1,0 +1,8 @@
+{
+  "name": "drupal/route_titles",
+  "type": "drupal-module",
+  "description": "Route Titles",
+  "homepage": "https://github.com/TopFloorTech/drupal-route_titles",
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev"
+}

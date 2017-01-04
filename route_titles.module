@@ -1,0 +1,22 @@
+<?php
+
+function route_titles_preprocess_page_title(&$variables) {
+  $config = \Drupal::config('route_titles.settings');
+  $newLines = '/(\r\n|\r|\n)/';
+  $titles = preg_split($newLines, $config->get('titles'));
+
+  foreach ((array) $titles as $pattern) {
+    $pattern = trim($pattern);
+    if (empty($pattern)) {
+      continue;
+    }
+
+    list($route, $title) = explode("|", $pattern);
+
+    $routeName = \Drupal::routeMatch()->getRouteName();
+
+    if ($route == $routeName) {
+      $variables['title'] = $title;
+    }
+  }
+}

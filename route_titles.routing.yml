@@ -1,0 +1,7 @@
+route_titles.admin_settings:
+  path: /admin/config/user-interface/route-titles
+  defaults:
+    _title: 'Route Titles'
+    _form: \Drupal\route_titles\Form\SettingsForm
+  requirements:
+    _permission: 'administer route titles'

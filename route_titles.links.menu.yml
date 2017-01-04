@@ -1,0 +1,5 @@
+float_labels.admin_settings:
+  route_name: route_titles.admin_settings
+  title: 'Route Titles'
+  description: 'Override the page title for configured routes.'
+  parent: system.admin_config_ui
