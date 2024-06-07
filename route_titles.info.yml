@@ -1,6 +1,5 @@
 name: Route Titles
 type: module
 description: 'Override the page title for configured routes.'
-version: 8.x-1.x
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8.7 || ^9 || ^10
 package: Other
