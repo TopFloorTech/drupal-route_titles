@@ -11,7 +11,7 @@ use Symfony\Component\Routing\RouteCollection;
  */
 class RouteSubscriber extends RouteSubscriberBase {
 
-  public static function getSubscribedEvents() {
+  public static function getSubscribedEvents(): array {
     $events = [];
 
     $events[RoutingEvents::ALTER] = array('onAlterRoutes', 100);
